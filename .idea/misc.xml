@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/CountCouter/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/CountCouter/app/src/main/res/drawable/orange_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/CountCouter/app/src/main/res/layout/activity_basketcounter.xml" value="0.18" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/CountCouter/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/CountCouter/app/src/main/res/layout/app_basketcounter.xml" value="0.16458333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

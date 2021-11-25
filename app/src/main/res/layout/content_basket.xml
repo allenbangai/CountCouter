@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ActivityBasketCourtCounter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/dp10"
+                android:text="@string/vs"
+                android:textSize="21sp"
+                android:textColor="@color/black_Color200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/team_A"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp30"
+                android:padding="@dimen/dp10"
+                android:text="@string/team_a"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textColor="@color/black_Color200"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/team_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp30"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginEnd="@dimen/dp30"
+                android:padding="@dimen/dp10"
+                android:text="@string/team_b"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textColor="@color/black_Color200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/teamA_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginEnd="@dimen/dp15"
+                android:padding="@dimen/dp10"
+                android:text="@string/_0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp35"
+                app:layout_constraintEnd_toStartOf="@+id/view_seperator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team_A" />
+
+            <TextView
+                android:id="@+id/point03_A"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="@drawable/orange_background"
+                android:padding="@dimen/dp10"
+                android:text="@string/_3_points"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp21"
+                app:layout_constraintEnd_toStartOf="@+id/view_seperator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/teamA_score" />
+
+            <TextView
+                android:id="@+id/point02_A"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="@drawable/orange_background"
+                android:padding="@dimen/dp10"
+                android:text="@string/_2_points"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp21"
+                app:layout_constraintEnd_toStartOf="@+id/view_seperator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/point03_A" />
+
+            <TextView
+                android:id="@+id/freeThrow_A"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="@drawable/orange_background"
+                android:padding="@dimen/dp10"
+                android:text="@string/free_throw"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp21"
+                app:layout_constraintEnd_toStartOf="@+id/view_seperator"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/point02_A" />
+
+            <View
+                android:id="@+id/view_seperator"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/grey_Color500"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/teamB_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginEnd="@dimen/dp15"
+                android:padding="10dp"
+                android:text="@string/_0"
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_seperator"
+                app:layout_constraintTop_toBottomOf="@+id/team_B" />
+
+            <TextView
+                android:id="@+id/point02_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="@drawable/orange_background"
+                android:padding="@dimen/dp10"
+                android:text="@string/_2_points"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_seperator"
+                app:layout_constraintTop_toBottomOf="@+id/point03_B" />
+
+            <TextView
+                android:id="@+id/point03_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="@drawable/orange_background"
+                android:padding="@dimen/dp10"
+                android:text="@string/_3_points"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_seperator"
+                app:layout_constraintTop_toBottomOf="@+id/teamB_score" />
+
+
+            <TextView
+                android:id="@+id/freeThrow_B"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp15"
+                android:background="@drawable/orange_background"
+                android:padding="@dimen/dp10"
+                android:text="@string/free_throw"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_seperator"
+                app:layout_constraintTop_toBottomOf="@+id/point02_B" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/freeThrow_A">
+
+                <Button
+                    android:id="@+id/previous_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:background="@drawable/orange_background"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/back"
+                    android:textSize="@dimen/sp21"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/clear_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:background="@drawable/orange_background"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/clear"
+                    android:textSize="@dimen/sp21"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</ScrollView>
