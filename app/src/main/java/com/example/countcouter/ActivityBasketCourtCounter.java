@@ -1,14 +1,10 @@
 package com.example.countcouter;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import java.util.Objects;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityBasketCourtCounter extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,8 +21,8 @@ public class ActivityBasketCourtCounter extends AppCompatActivity implements Vie
     private int constant = 0;
 
     //variables for saving points during the basketball match
-    int points[] = new int[100];
-    int team[] = new int[100];
+    int[] points = new int[100];
+    int[] team = new int[100];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,27 +38,19 @@ public class ActivityBasketCourtCounter extends AppCompatActivity implements Vie
         freeThrowB = findViewById(R.id.freeThrow_B);
         teamScoreB = findViewById(R.id.teamB_score);
 
-        TextView points[] = new TextView[]{twoPointA, threePointA, freeThrowA, twoPointB, threePointB, freeThrowB};
+        TextView[] points = new TextView[]{twoPointA, threePointA, freeThrowA, twoPointB, threePointB, freeThrowB};
         for(TextView text: points){
             text.setOnClickListener(this);
         }
 
         clear = findViewById(R.id.clear_score);
-        clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                teamScoreA.setText("0");
-                teamScoreB.setText("0");
-                constant = 0;
-            }
+        clear.setOnClickListener(view -> {
+            teamScoreA.setText("0");
+            teamScoreB.setText("0");
+            constant = 0;
         });
         back = findViewById(R.id.previous_score);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                removeScore();
-            }
-        });
+        back.setOnClickListener(view -> removeScore());
     }
 
     //function to remove previous score
@@ -79,7 +67,6 @@ public class ActivityBasketCourtCounter extends AppCompatActivity implements Vie
                 score = Integer.parseInt(teamScoreB.getText().toString()) - points[constant];
                 teamScoreB.setText(String.valueOf(score));
             }
-        } else{
         }
     }
 
