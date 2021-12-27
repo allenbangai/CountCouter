@@ -71,7 +71,7 @@ public class ActivityBasketCourtCounter extends AppCompatActivity implements Vie
     }
 
     private void addPoint(TextView point){
-        int basketNumber = 0;
+        int basketNumber;
         int scoreA = Integer.parseInt(teamScoreA.getText().toString());
         int scoreB = Integer.parseInt(teamScoreB.getText().toString());
 
