@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CourtCounter">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreenActivity"
             android:exported="false" />
         <activity
