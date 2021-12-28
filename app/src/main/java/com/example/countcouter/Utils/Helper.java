@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.countcouter.MainActivity;
+
 public class Helper {
     Context context;
     Intent intent;
@@ -32,4 +34,13 @@ public class Helper {
     public void logMessage(Class TAGClass, String errorMessage){
         Log.d("com.example.echat." + TAGClass.getName(), errorMessage);
     }
+
+    public void gotoSendActivity(String message){
+        intent = new Intent(context, MainActivity.class);
+        intent.putExtra("send", message);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        context.startActivity(intent);
+    }
+
 }
